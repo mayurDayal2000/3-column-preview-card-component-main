@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/mayurDayal2000/3-column-preview-card-component-main.git)
-- [Live Site URL](https://mayurdayal2000.github.io/3-column-preview-card-component-main.git/)
+- [Live Site URL](https://mayurdayal2000.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
