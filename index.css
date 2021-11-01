@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 5%;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 920px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-col {
+  width: 33.33%;
+  height: 100%;
+  padding: 5%;
+}
+
+.card-col-01 {
+  background-color: #e38826;
+  border-radius: 10px 0 0 10px;
+}
+
+.card-col-02 {
+  background-color: #006970;
+}
+
+.card-col-03 {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+
+.card-col img {
+  width: 100%;
+  max-width: 64px;
+}
+.card-col h1 {
+  margin-top: 15.4%;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 38px;
+  letter-spacing: 0.004em;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.card-col p {
+  margin-top: 12%;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.002em;
+  color: #ffffffbf;
+  height: 150px;
+}
+
+.card-col button {
+  padding: 18px;
+  width: 100%;
+  max-width: 146px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  margin-top: 25%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.card-col-01 button {
+  color: #e38826;
+}
+
+.card-col button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+.card-col-02 button {
+  color: #006970;
+}
+
+.card-col-03 button {
+  color: #004241;
+}
+
+@media screen and (max-width: 880px) {
+  #root {
+    padding: 3%;
+  }
+
+  .card-col h1 {
+    font-size: clamp(20px, 5vw, 38px);
+  }
+
+  .card-col p {
+    font-size: clamp(12px, 2vw, 15px);
+  }
+
+  .card-col button {
+    font-size: clamp(12px, 2vw, 15px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .card-container {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #root {
+    padding: 5%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    max-width: 500px;
+    height: fit-content;
+  }
+
+  .card-col {
+    width: 100%;
+    height: fit-content;
+    padding: 46px 48px;
+  }
+
+  .card-col-01 {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-col-03 {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .card-col h1 {
+    margin-top: 32px;
+    font-size: 38px;
+  }
+
+  .card-col p {
+    margin-top: 22px;
+    font-size: 15px;
+    height: fit-content;
+  }
+
+  .card-col button {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+}
+
+.owner {
+  margin-top: 3%;
+  font-weight: 400;
+  font-size: clamp(12px, 3vw, 18px);
+  text-align: center;
+  padding-bottom: 5%;
+  color: #e38826;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.owner a {
+  color: #006970;
+}
